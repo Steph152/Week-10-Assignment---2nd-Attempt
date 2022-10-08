@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Week 10- Simple</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+
+</head>
+<body>
+<img src="reservation.jpg" class =  "container-fluid" alt="Make A Reservation" ><br><br>
+<h3 text-align = "center">Enter Reservation Information Below:</h3><br><br>
+<!--START OF FORM CODE-->
+<form>
+    <div class="form-row">
+      <div class="col-sm-4">
+        <input type="text" class="form-control" placeholder="First name" id="firstName">
+      </div>
+      <div class="col-sm-4">
+        <input type="text" class="form-control" placeholder="Last name" id="lastName">
+      </div>
+      
+      <!--DROP DOWN FORMS-->
+
+      <!--FROM:https://www.javatpoint.com/how-to-create-dropdown-list-using-javascript
+        var mylist = document.getElementById("myList");  
+        document.getElementById("favourite").value = mylist.options[mylist.selectedIndex].text; 
+        -->
+
+      <div class="form-row align-items-center">
+        <div class="col-4">
+          <label class="mr-sm-2" for="inlineFormCustomSelect">Number of Guests</label>
+          <select class="custom-select mr-sm-2" id="guests">
+            <option selected>Choose...</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="form-row align-items-center">
+            <div class="col-6">
+              <label class="mr-sm-2" for="inlineFormCustomSelect">Time</label>
+              <select class="custom-select mr-sm-2" id="time">
+                <option selected>Choose...</option>
+                <option value="1">5:00 PM</option>
+                <option value="2">6:00 PM</option>
+                <option value="3">7:00 PM</option>
+              </select>
+            </div>
+
+      <!--RADIO BUTTONS-->
+      <!--
+        <div class="form-check">
+        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+        <label class="form-check-label" for="exampleRadios1">
+        Default radio
+        </label>
+        </div>
+      
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="inside" value="option1" checked>
+        <label class="form-check-label" for="option1">
+          Indoor Seating
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" id="patio" value="option2">
+        <label class="form-check-label" for="option2">
+          Patio Seating
+        </label>
+      </div>
+      -->
+    <div>
+      <div>
+        <button class="btn btn-primary" id="button" >Submit</button>
+      </div>
+    </div>
+    </div>
+
+  </form>
+<br>
+<!--START OF TABLE CODE-->
+<table class="table table-sm, container-fluid" id="table">
+    <thead>
+      <tr>
+        <th scope="col-sm-3">First</th>
+        <th scope="col-sm-3">Last</th>
+        <th scope="col-sm-3">Number of Guests</th>
+        <th scope="col-sm-3">Time</th>
+      </tr>
+    </thead>
+   
+    <tbody>
+
+    </tbody>
+
+    <script src="simpleweek10.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js" ></script>
+
+</body>
+</html>
